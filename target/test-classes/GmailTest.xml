@@ -1,0 +1,34 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >
+  
+<suite name="GmailTest" verbose="1" >
+  <!-- <test name="Gmail positve test" >
+    <groups>
+    <run>
+      <include name="PositiveLogintest"/>
+    </run>
+  </groups>
+    <classes>
+       <class name="io.gmail.login.Gmail_login" />      
+    </classes>  
+  </test> -->
+ 
+  <test name="Gmail Negative Test">
+  
+<parameter name="username" value="tom" />
+<parameter name="Expected" value="Couldn't find your Google Account" />
+  
+    <classes>
+      <class name="io.gmail.login.Gmail_login">
+      <methods>
+      <!-- <include name="init"></include>
+      <include name="opernurl"></include> -->
+      
+      <include name="Negatvelogintest"></include>
+					
+					
+				</methods>
+      </class>
+     
+    </classes>
+  </test>
+</suite>

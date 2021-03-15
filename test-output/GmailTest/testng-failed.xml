@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [GmailTest]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" name="Gmail Negative Test(failed)">
+    <parameter name="Expected" value="Couldn&#039;t find your Google Account"/>
+    <parameter name="username" value="tom"/>
+    <classes>
+      <class name="io.gmail.login.Gmail_login">
+        <methods>
+          <include name="init"/>
+          <include name="Negatvelogintest"/>
+          <include name="driverclose"/>
+        </methods>
+      </class> <!-- io.gmail.login.Gmail_login -->
+    </classes>
+  </test> <!-- Gmail Negative Test(failed) -->
+</suite> <!-- Failed suite [GmailTest] -->
